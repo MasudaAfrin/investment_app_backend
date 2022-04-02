@@ -58,4 +58,19 @@ RSpec.describe Campaign, type: :model do
                             sector: sector)
     expect(campaign.investment_multiple).to be > 0
   end
+
+  it 'has an image attachment' do
+    campaign = Campaign.new(name: 'This is a campaign',
+                            percentage_raised: 0,
+                            target_amount: 100,
+                            investment_multiple: 0.1,
+                            country: country,
+                            sector: sector)
+    campaign.image.attach(
+      io: File.open(Rails.root.join('spec', 'fixtures', 'campaign.jpg')),
+      filename: 'campaign.jpg',
+      content_type: 'image/jpg'
+    )
+    expect(campaign.image).to be_attached
+  end
 end
