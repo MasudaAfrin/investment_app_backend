@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 # rubocop:disable Style/Documentation
 
-module Investment
+module Seedrs
   module V1
     class Campaigns < Base
       resource :campaigns do

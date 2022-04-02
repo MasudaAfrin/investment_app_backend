@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-module Investment
+module Seedrs
   class Base < Grape::API
     # Versioning and Formatting
     version 'v1', using: :path
