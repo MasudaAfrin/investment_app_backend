@@ -32,8 +32,10 @@ gem 'grape_on_rails_routes'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'factory_bot_rails'
   gem 'rspec-rails', '~> 5.0.0'
   gem 'rubocop-rails', require: false
+  gem 'faker'
 end
 
 group :development do
