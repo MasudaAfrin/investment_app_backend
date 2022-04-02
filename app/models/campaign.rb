@@ -24,4 +24,12 @@ class Campaign < ApplicationRecord
       content_type: file[:type]
     )
   end
+
+  def sector_name
+    sector&.name || ''
+  end
+
+  def country_name
+    country&.name || ''
+  end
 end
