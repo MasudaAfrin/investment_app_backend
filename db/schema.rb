@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_04_02_143430) do
+ActiveRecord::Schema.define(version: 2022_04_02_213120) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -47,7 +47,7 @@ ActiveRecord::Schema.define(version: 2022_04_02_143430) do
     t.string "name", null: false
     t.decimal "percentage_raised", precision: 10, scale: 2, default: "0.0"
     t.decimal "target_amount", precision: 10, scale: 2, default: "0.0"
-    t.decimal "investment_multiple", precision: 4, scale: 2, default: "1.0"
+    t.decimal "investment_multiple", precision: 10, scale: 2, default: "1.0"
     t.datetime "start_datetime"
     t.datetime "end_datetime"
     t.bigint "country_id", null: false

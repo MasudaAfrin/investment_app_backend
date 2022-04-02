@@ -2,6 +2,8 @@
 
 module Seedrs
   class Base < Grape::API
+    include Grape::Kaminari
+
     # Versioning and Formatting
     version 'v1', using: :path
     format :json
