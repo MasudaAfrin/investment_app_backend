@@ -32,4 +32,12 @@ class Campaign < ApplicationRecord
   def country_name
     country&.name || ''
   end
+
+  def self.search_by_sectors(sector_id)
+    where(sector_id: sector_id)
+  end
+
+  def self.search_by_country(country_id)
+    where(country_id: country_id)
+  end
 end

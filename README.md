@@ -35,7 +35,7 @@ BASE_URL = http://localhost:3000
 * **Method:** `GET`
 
 *  **URL Params:** `{ page: '' //integer,
-   per_page: '' //integer
+   per_page: '' //integer, sector_id: '' //integer, optional, country_id: ''//integer, optional
    }`
 
 * **Success Response:**
