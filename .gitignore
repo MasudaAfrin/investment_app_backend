@@ -30,3 +30,4 @@ vendor/cache/*
 /public/packs-test
 /public/packs
 /config/database.yml
+.env
